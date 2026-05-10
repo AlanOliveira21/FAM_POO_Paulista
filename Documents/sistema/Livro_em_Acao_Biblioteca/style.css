@@ -1,0 +1,1721 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+
+
+
+
+/* ========================================= */
+
+/* 1. GENERAL RESET & TYPOGRAPHY             */
+
+/* ========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: #f9f9f9;
+
+    color: #2d3436;
+
+    line-height: 1.8;
+
+}
+
+
+
+h1, h2, h3, .logo {
+
+    font-family: 'Montserrat', sans-serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+/* Seção de Introdução da Home */
+.home-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 0;
+    flex-wrap: wrap; /* Garante que quebre linha no celular */
+}
+
+.home-intro-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.brand-container {
+    margin-bottom: 30px;
+}
+
+.home-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+.home-description {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #444;
+    border-left: 5px solid #8cb92d; /* A cor verde da sua marca */
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Ajustes da Galeria na Home */
+.home-intro-gallery {
+    flex: 1.5;
+    min-width: 350px;
+}
+
+.home-intro-gallery .gallery-main img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.home-intro-gallery .gallery-thumbs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.home-intro-gallery .gallery-thumbs img {
+    width: 18%;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.home-intro-gallery .gallery-thumbs img:hover {
+    border-color: #8cb92d;
+    transform: translateY(-3px);
+}
+
+
+
+/* ========================================= */
+
+/* 2. HEADER & NAVIGATION                    */
+
+/* ========================================= */
+
+header {
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    padding: 15px 0;
+
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+
+}
+
+
+
+.nav-container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 20px;
+
+}
+
+
+
+.logo {
+
+    font-size: 24px;
+
+    color: #2d3436;
+
+    border-left: 4px solid #8cb400;
+
+    padding-left: 10px;
+
+}
+
+
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 20px;
+
+}
+
+
+
+nav ul li a {
+
+    text-decoration: none;
+
+    color: #636e72;
+
+    font-weight: 600;
+
+    font-size: 13px;
+
+}
+
+
+
+nav ul li a:hover, nav ul li a.active {
+
+    color: #8cb400;
+
+}
+
+
+
+/* ========================================= */
+
+/* 3. LAYOUT CONTAINERS & TITLES             */
+
+/* ========================================= */
+
+.content-wrapper {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+}
+
+
+
+.page-title {
+
+    font-size: 48px;
+
+    margin: 60px 0 40px;
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+
+
+.page-title::after {
+
+    content: '';
+
+    display: block;
+
+    width: 60px;
+
+    height: 5px;
+
+    background: #8cb400;
+
+    margin: 10px auto 0;
+
+}
+
+
+
+.main-content {
+
+    margin-top: 20px;
+
+}
+
+
+
+/* Estilo da Seção Oficinas */
+
+.oficinas-pedagogicas {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    font-family: 'Arial', sans-serif;
+
+}
+
+
+
+.titulo-principal {
+
+    text-align: center;
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    margin-bottom: 40px;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+.layout-split {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+
+.coluna-texto {
+
+    flex: 1.2; /* Dá um pouco mais de espaço para o texto */
+
+    color: #444;
+
+    line-height: 1.5;
+
+    font-size: 16px;
+
+}
+
+
+.subtitulo-oficina {
+    font-size: 32px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+
+    font-size: 36px;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    color: #333;
+
+}
+
+
+
+.calendario {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 20px 0;
+
+}
+
+.calendario-lista {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+
+
+.calendario li {
+
+    margin-bottom: 3px;
+
+}
+
+
+.calendario-lista li {
+    margin-bottom: 5px;
+}
+
+
+.coluna-fotos-oficina {
+    flex: 1;
+}
+
+.grid-oficinas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria as duas colunas de fotos */
+    gap: 15px;
+}
+
+.grid-oficinas img {
+    width: 100%;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.livros-container {
+    text-align: center; /* Centraliza o título e o botão */
+}
+
+.texto-livros {
+    text-align: left; /* Mantém o texto principal alinhado à esquerda */
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-container {
+    margin: 40px 0;
+}
+
+.btn-catalogo {
+    background-color: #ff6600; /* Laranja da referência */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Grade de fotos no rodapé */
+.grid-livros-rodape {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap; 
+    width: 100%; /* Ensures the container takes full width */
+}
+
+.livro-item {
+    flex: 0 0 200px; /* This prevents the item from shrinking or growing */
+    text-align: center;
+}
+
+.livro-item img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px dashed #ccc;
+    padding: 5px;
+    display: block; /* Helps with alignment */
+}
+
+
+/* Content Container from your template */
+
+.content-card {
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+}
+
+
+
+/* Titles matching your "Projeto" header */
+
+.page-title {
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    color: #333;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.green-divider {
+
+    width: 60px;
+
+    height: 5px;
+
+    background-color: #a6ce39; /* Green from your template */
+
+    margin: 0 auto 40px 0;
+
+}
+
+
+
+/* Fix for the "Congested" look */
+
+.layout-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px; /* Isso cria o espaço entre o texto e as fotos */
+    margin-top: 30px;
+}
+
+.coluna-texto {
+    flex: 0 0 60%; /* Força o texto a ocupar 60% e não crescer mais */
+    text-align: justify;
+}
+
+.coluna-imagens {
+    flex: 0 0 35%; /* Força as imagens a ocuparem 35% */
+}
+
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-fotos img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eee; /* Changed from dashed to solid light gray */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.grid-fotos img:hover {
+    transform: scale(1.05);
+    border-color: #8cb400; /* Turns green when hovering */
+}
+
+.btn-container {
+    margin-top: 40px;
+    text-align: center; /* Centers the button under the text */
+}
+
+.btn-catalogo {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 16px;
+    /* keep your orange background */
+}
+
+
+
+/* Orange Button with dashed border effect */
+
+.button-wrapper {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+
+
+.btn-catalogo {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px dashed #fff; /* Borda tracejada interna */
+    outline: 4px solid #ff6600; /* Borda sólida externa */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+/* Image Grid matching your layout */
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria as duas colunas lado a lado */
+    gap: 15px;
+}
+
+.grid-fotos img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Garante que a imagem seja um quadrado perfeito */
+    object-fit: cover;
+    border-radius: 50%; /* Transforma o quadrado em círculo */
+    border: 1px dashed #ccc;
+    padding: 5px;
+    background: #fff;
+}
+
+
+
+/* ========================================= */
+
+/* 4. HOME PAGE (Feature Area & Books)       */
+
+/* ========================================= */
+
+.feature-area {
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+.sidebar {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+
+
+.logo-passatempo img {
+
+    max-width: 150px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.brand-name {
+
+    color: #d9534f;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+    line-height: 1.1;
+
+}
+
+
+
+.brand-name span {
+
+    display: block;
+
+    font-size: 18px;
+
+    color: #1a1a1a;
+
+}
+
+
+
+.description-box p {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    line-height: 1.3;
+
+    color: #1a1a1a;
+
+    text-align: left;
+
+}
+
+
+
+.gallery-container {
+
+    flex: 2;
+
+}
+
+
+
+.main-image img {
+
+    width: 100%;
+
+    max-width: 800px;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    background-color: #f0f0f0;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.script-intro {
+
+    font-family: 'Caveat', cursive;
+
+    color: #e64a19; /* A warm red/orange like your mockup */
+
+    font-size: 32px;
+
+    margin-bottom: -15px; /* Pulls it closer to the heading below it */
+
+    display: block;
+
+}
+
+
+
+.main-heading {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 700;
+
+    color: #2d3436;
+
+    font-size: 42px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+#featured {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+.thumbnails {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 5px;
+
+}
+
+
+
+.thumbnails img {
+
+    width: 19%;
+
+    height: 80px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    border: 2px solid transparent;
+
+}
+
+
+
+.thumbnails img:hover {
+
+    border-color: #4CAF50;
+
+}
+
+
+
+.thumbnails img.selected {
+
+    border: 3px solid #4CAF50;
+
+}
+
+
+
+/* Books Grid */
+
+.books-section {
+
+    border-top: 1px dashed #ccc;
+
+    padding-top: 40px;
+
+}
+
+
+
+.books-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+}
+
+
+
+.book-item {
+
+    text-align: center;
+
+}
+
+
+
+.book-cover-container {
+
+    width: 200px;
+
+    height: 200px;
+
+    margin: 0 auto 20px auto;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 2px dashed #999;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #f9f9f9;
+
+}
+
+
+
+.book-cover {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+.book-title {
+
+    font-size: 18px;
+
+    color: #1a1a1a;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.book-description p {
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #555;
+
+    text-align: left;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.empty-cover {
+
+    width: 100px;
+
+    height: 100px;
+
+    background-color: #eee;
+
+    border-radius: 50%;
+
+}
+
+
+
+.book-item.placeholder {
+
+    opacity: 0.6;
+
+}
+
+
+/* Increase the gap between text and images */
+.layout-split {
+    display: flex;
+    gap: 60px; /* Increased from 40px to give breathing room */
+    align-items: flex-start;
+}
+
+/* Make the text column slightly narrower and add line-height */
+.coluna-texto {
+    flex: 1;
+    line-height: 1.8; /* Improves readability */
+    color: #444;
+}
+
+.coluna-texto p {
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+/* Ensure the image column doesn't feel cramped */
+.coluna-imagens {
+    flex: 0 0 300px; /* Locks the width so images don't stretch */
+}
+
+
+
+/* ========================================= */
+
+/* 5. A ONG & PROJETO PAGES                  */
+
+/* ========================================= */
+
+.about-section {
+
+    display: flex;
+
+    gap: 40px;
+
+    align-items: flex-start;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+
+    margin-bottom: 50px;
+
+    border: 1px solid #eee;
+
+}
+
+
+
+.about-text {
+
+    flex: 1;
+
+}
+
+
+
+.about-text p {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+
+    text-align: justify;
+
+    color: #333;
+
+}
+
+
+
+.about-text strong {
+
+    color: #000;
+
+    text-decoration: underline;
+
+}
+
+
+
+.award-seal img {
+
+    max-width: 200px;
+
+    margin-top: 20px;
+
+}
+
+
+
+.about-gallery {
+
+    flex: 1;
+
+}
+
+
+
+.collage-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: auto auto;
+
+    gap: 15px;
+
+}
+
+
+
+.grid-img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border: 1px solid #ddd;
+
+}
+
+
+
+.moderna-partner img {
+
+    border: 1px dashed #ccc;
+
+    padding: 10px;
+
+}
+
+
+
+/* ========================================= */
+
+/* 6. ROTEIROS PAGE                          */
+
+/* ========================================= */
+
+.intro-box {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    padding: 20px;
+
+    border-bottom: 1px dashed #ccc;
+
+}
+
+
+
+.roteiro-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+
+    margin-bottom: 50px;
+
+    border: 1px solid #eee;
+
+}
+
+
+
+.roteiro-item:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+
+
+.roteiro-item.reverse {
+
+    flex-direction: row-reverse;
+
+}
+
+
+
+.roteiro-text {
+
+    flex: 1;
+
+}
+
+
+.roteiro-image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.roteiro-image > img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.roteiro-header.page-title::after {
+    margin: 10px 0 20px 0; /* The '0' in the second spot keeps it left-aligned */
+}
+
+.roteiro-header {
+    color: #8cb400; /* Matching the specific green from your image */
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* Gallery Container */
+
+
+.gallery-main img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Thumbnail Row */
+.gallery-thumbs {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.gallery-thumbs img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.gallery-thumbs img:hover {
+    border-color: #8cb400; /* Use your green theme color */
+}
+
+
+/* Category Colors */
+
+.title-artes, .title-ciencias, .title-historico, .title-seres-vivos {
+
+    color: #8cb400;
+
+    font-size: 28px;
+
+}
+
+
+
+/* ========================================= */
+
+/* 7. FOOTER & SOCIALS                       */
+
+/* ========================================= */
+
+.supporters-section {
+
+    text-align: center;
+
+    padding: 60px 0;
+
+}
+
+
+
+.section-title {
+
+    font-size: 24px;
+
+    color: #555;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.supporters-grid {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+
+.supporters-grid img {
+
+    max-height: 80px;
+
+    filter: grayscale(20%);
+
+}
+
+
+
+footer {
+
+    background-color: #2d3436;
+
+    color: #dfe6e9;
+
+    padding: 80px 0 40px;
+
+    margin-top: 100px;
+
+}
+
+
+
+.footer-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+
+.footer-col {
+
+    flex: 1;
+
+}
+
+
+
+.footer-logo {
+
+    color: #c4d600;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.copyright {
+
+    font-size: 12px;
+
+}
+
+
+
+.copyright a {
+
+    color: #00aaff;
+
+    text-decoration: none;
+
+}
+
+
+
+.footer-col h3 {
+
+    color: #8cb400;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+
+}
+
+
+
+.footer-col p {
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.footer-photo {
+
+    border-radius: 10px;
+
+    filter: grayscale(30%);
+
+}
+
+
+
+.social-icons {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+
+
+.social-icons img {
+
+    width: 38px;
+
+    height: 38px;
+
+    padding: 8px;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+
+
+.social-icons img:hover {
+
+    background: #8cb400;
+
+    filter: brightness(0) invert(1);
+
+}
+
+/* Hero Image Section */
+.hero-contato {
+    /* Substitua pelo caminho correto da sua imagem */
+    background-image: url('icons/contact.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Ajuste a altura conforme sua preferência */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.3); /* Um escurecimento leve para dar leitura ao texto */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay h1 {
+    color: yellow;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/* Form Styling within our Template */
+.contact-card {
+    margin-top: -50px; /* Faz o formulário sobrepor a imagem */
+    position: relative;
+    z-index: 2;
+    background:whitesmoke;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.btn-enviar {
+    align-self: flex-end;
+    background-color: #8cb400; /* Your brand green */
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #769900;
+}
+
+
+
+
+.sub-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.testimonial-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.testimonial-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.teacher-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff; /* White border looks like a photo frame */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Stronger shadow for depth */
+    object-fit: cover;
+}
+
+/* Speech Bubble Style */
+.speech-bubble {
+    position: relative;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 25px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.speech-bubble p {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.teacher-name {
+    display: block;
+    font-weight: bold;
+    color: #8cb400;
+    font-size: 14px;
+}
+
+/* The Bubble "Arrows" */
+.speech-bubble.right::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #f9f9f9;
+}
+
+.speech-bubble.left::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #f9f9f9;
+}
+
+.depoimento-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-depoimento {
+    background: #004a87; /* Blue button as per ref */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-depoimento:hover {
+    background: #003366;
+    transform: scale(1.05);
+}
+
+
+.footer-photo {
+    width: 100%;           /* Faz a imagem ocupar toda a largura da coluna */
+    max-width: 300px;      /* Define um limite para não ficar grande demais em telas largas */
+    height: 200px;         /* Define uma altura fixa para alinhar com os textos ao lado */
+    object-fit: cover;     /* CORTE INTELIGENTE: preenche o espaço sem distorcer a imagem */
+    object-position: center; /* Garante que o rosto das pessoas fique centralizado */
+    border-radius: 8px;    /* Opcional: deixa as bordas arredondadas para um visual moderno */
+    display: block;
+    margin: 0 auto;        /* Centraliza a imagem na coluna */
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha o topo da imagem com o topo dos textos */
+    flex-wrap: wrap;         /* Garante que em celulares as colunas quebrem linha */
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1;                /* Faz com que todas as colunas tenham larguras equilibradas */
+    min-width: 200px;       /* Evita que as colunas fiquem muito estreitas */
+}
+
+
+
+
+/* ========================================= */
+
+/* 8. MEDIA QUERIES (Mobile Responsiveness)  */
+
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .feature-area, .about-section {
+
+        flex-direction: column;
+
+    }
+
+    .books-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .roteiro-item, .roteiro-item.reverse, .footer-container {
+
+        flex-direction: column;
+
+    }
+
+    .footer-container {
+
+        text-align: center;
+
+    }
+
+    .social-icons {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .books-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    nav ul {
+
+        display: none; /* Mobile menu can be added later */
+
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+
+    .layout-split {
+
+        flex-direction: column;
+
+    }
+
+   
+
+    .titulo-principal {
+
+        font-size: 32px;
+
+    }
+
+}
+
+
+
+/* Responsive fix for mobile */
+
+@media (max-width: 768px) {
+
+    .layout-split {
+
+        flex-direction: column;
+
+    }
+
+    .coluna-imagens {
+
+        max-width: 100%;
+
+        margin-top: 30px;
+
+    }
+
+}
+
+
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .home-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-description {
+        border-left: none;
+        border-top: 3px solid #8cb92d;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
